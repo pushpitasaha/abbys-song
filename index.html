@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abby's Song</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7; /* Light gray background */
+            color: #333; /* Dark text color */
+        }
+
+        header {
+            background-color: #fde0c5; /* Pastel orange for the header */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #6d597a; /* Pastel purple text color for the title */
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        main {
+            background-color: #e0f3e0; /* Pastel green background for the content */
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #f4b6c2; /* Pastel pink for the footer */
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            /* Responsive styles for screens less than or equal to 768px wide */
+            header {
+                padding: 10px;
+            }
+            header h1 {
+                font-size: 24px;
+            }
+            main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Abby's Song</h1>
+    </header>
+    <main>
+        <div class="video-container">
+            <video controls>
+                <source src="./media/Abby's-Song.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Pushpita S</p>
+    </footer>
+</body>
+</html>
